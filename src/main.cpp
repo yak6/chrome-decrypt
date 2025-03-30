@@ -9,7 +9,7 @@ namespace fs = std::filesystem;
 
 int main(int argc, char *argv[]) {
     std::ofstream outfile;
-    std::string dumpFilename = "output.txt";
+    std::string dumpFilename;
     bool save_output = false;
     for (int i = 1; i < argc; i++) { // Parse arguments
         if (std::string(argv[i]) == "-o" && i + 1 < argc) { // Check boundary
