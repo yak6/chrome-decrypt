@@ -12,8 +12,7 @@
 #include <sqlite3.h>
 #include <openssl/evp.h>
 #include <openssl/aes.h>
-
-#include "../include/json.hpp" 
+#include <nlohmann/json.hpp>
 
 namespace fs = std::filesystem;
 using json = nlohmann::json;
